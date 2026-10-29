@@ -3,12 +3,12 @@ import './checkout-header.css'
 import { Header } from '../components/Header';
 import { Link } from 'react-router'
 
-export function CheckoutPage() {
+export function CheckoutPage({cart}) {
   return (
     <>
       <title>Checkout</title>
 
-      <Header />
+      <Header cart={cart}/>
 
 
       <div className="checkout-header">
